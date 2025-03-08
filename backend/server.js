@@ -12,6 +12,10 @@ dotenv.config();
 
 const app = express();
 
+// Enable CORS for the frontend URL
+const FRONTEND_URL = process.env.FRONTEND_URL || "http://localhost:3000";
+app.use(cors({ origin: FRONTEND_URL, credentials: true }));
+
 const server = new ApolloServer({
   typeDefs,
   resolvers,
