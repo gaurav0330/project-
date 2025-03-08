@@ -3,7 +3,7 @@ import { setContext } from "@apollo/client/link/context";
 
 // GraphQL API Endpoint
 const httpLink = createHttpLink({
-  uri: "http://localhost:5000/graphql", // Replace with your backend URL
+  uri: "https://project-p1q6.onrender.com/graphql", // Replace with your backend URL
 });
 
 // Middleware to Attach JWT Token to Headers
