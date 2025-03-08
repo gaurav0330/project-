@@ -31,6 +31,9 @@ The **Project Management Tool** is a comprehensive solution designed to streamli
 **Authentication:** JWT, OAuth (Google, GitHub, Facebook)  
 **Real-time Updates:** Socket.io (WebSockets)  
 
+## Live Demo  
+🔗 **Live Link:** [Project Management Tool](https://project-neon-omega.vercel.app/)  
+
 ## Installation & Setup  
 
 ### Prerequisites  
