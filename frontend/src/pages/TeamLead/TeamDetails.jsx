@@ -8,7 +8,6 @@ import TaskManagementPage from "./TaskManagementPage";
 import TaskDistributionPage from "./TaskDistributionPage";
 import DisplayTeamTaskPage from "./DisplayTeamTaskPage";
 import TaskApprovalPageLead from "../TeamLead/TaskApprovalPageLead";
-import Footer from "../../components/Other/Footer2";
 import ProjectDetailsCard from "../../components/Other/ProjectDeailsCard";
 
 const GET_PROJECT_BY_ID = gql`
