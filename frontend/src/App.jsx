@@ -2,7 +2,6 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import './index.css';
 import Navbar from './components/Other/NavBar';
-import Footer from './components/Other/Footer';
 import ProtectedRoute from './components/protectedRoute';  // ✅ Import ProtectedRoute
 import { useAuth } from './components/authContext';  // ✅ Import Auth Context
 
