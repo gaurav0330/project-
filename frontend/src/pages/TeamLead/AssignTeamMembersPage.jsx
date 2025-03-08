@@ -72,8 +72,8 @@ function AssignTeamMembers() {
       });
 
       if (response.data.addMemberToTeam.success) {
-        alert("Members assigned successfully!");
-        navigate("/ProjectHome"); // Ensure this route exists
+        alert("Members assigned successfully! Go Back to Create Task");
+        // navigate("/ProjectHome"); // Ensure this route exists
       } else {
         alert("Failed: " + response.data.addMemberToTeam.message);
       }

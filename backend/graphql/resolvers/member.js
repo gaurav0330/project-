@@ -18,7 +18,17 @@ const memberResolvers = {
 
         const projects = memberService.getProjectsByMember(memberId); // Call service function
 
-        return projects;
+        return (
+          projects.map((project) => ({
+            id: project._id,
+            title: project.title,
+            description: project.description,
+            startDate: project.startDate.toISOString(),
+            endDate: project.endDate.toISOString(),
+            category: project.category,
+            status: project.status,
+          }))
+        );
       } catch (error) {
         console.error("Error in resolver:", error);
         throw new Error("Failed to fetch projects");
