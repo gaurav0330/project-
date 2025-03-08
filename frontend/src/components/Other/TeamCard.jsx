@@ -13,7 +13,7 @@ const TeamCard = ({ team, projectId, navigate }) => {
     >
       {/* Team Name */}
       <h3 className="text-2xl font-semibold text-gray-900">{team.teamName}</h3>
-      
+       
       {/* Creation Date */}
       <p className="mt-1 text-sm text-gray-500">
         Created on {new Date(team.createdAt).toDateString()}

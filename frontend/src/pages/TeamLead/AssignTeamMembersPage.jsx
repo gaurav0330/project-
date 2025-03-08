@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useQuery, useMutation, gql } from "@apollo/client";
 import { Search, X } from "lucide-react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 
 // GraphQL Queries & Mutations
 const GET_ALL_TEAM_MEMBERS = gql`
@@ -31,11 +31,11 @@ const ADD_MEMBERS_TO_TEAM = gql`
 `;
 
 function AssignTeamMembers() {
+  const {teamId , projectId} = useParams();
   const navigate = useNavigate();
   const [searchQuery, setSearchQuery] = useState("");
   const [assignments, setAssignments] = useState([]);
-  const teamId = "67c576657e93206daf547e56"; // Hardcoded for now
-
+ 
   // Fetch available members
   const { loading, error, data } = useQuery(GET_ALL_TEAM_MEMBERS);
   const [addMemberToTeam] = useMutation(ADD_MEMBERS_TO_TEAM);
