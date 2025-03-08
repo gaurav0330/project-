@@ -82,10 +82,7 @@ export default function ProjectDashboard() {
           ) :
           activeComponent === "analytics" ? (
             <AnalyticsDashboard projectId={projectId} />
-          ) :
-            activeComponent === "projectHome" ? (
-              window.location.reload()
-            )
+          ) 
               : (
                 <>
                 <ProjectDetailsCard project={project} loading={loading} />
