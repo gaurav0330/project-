@@ -32,7 +32,7 @@ The **Project Management Tool** is a comprehensive solution designed to streamli
 **Real-time Updates:** Socket.io (WebSockets)  
 
 ## Live Demo  
-🔗 **Live Link:** [Project Management Tool](https://project-neon-omega.vercel.app/)  
+🔗 **Live Link:** [Project Management Tool](https://project-management-tool-two-jet.vercel.app/)  
 
 ## Installation & Setup  
 
